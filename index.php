@@ -7,6 +7,7 @@
 	$replyToken = $deCode['events'][0]['replyToken'];
 	$messages = [];
 	$messages['replyToken'] = $replyToken;
+  $userid = $deCode['events'][0]['source'];
 	$messages['messages'][0] = getFormatTextMessage("เอ้ย ถามอะไรก็ตอบได้"."aaaa");
 	$encodeJson = json_encode($messages);
 	$LINEDatas['url'] = "https://api.line.me/v2/bot/message/reply";
