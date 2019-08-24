@@ -17,9 +17,102 @@
 	http_response_code(200);
 	function getFormatTextMessage($text)
 	{
-		$datas = [];
+    $flexarray = '{
+  "type": "flex",
+  "altText": "Flex Message",
+  "contents": {
+    "type": "bubble",
+    "direction": "ltr",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "ร.ต.อ.สมชาย  มีสตางค์",
+          "size": "xl",
+          "align": "center",
+          "gravity": "center",
+          "color": "#2216C3"
+        },
+        {
+          "type": "separator",
+          "margin": "sm"
+        },
+        {
+          "type": "text",
+          "text": "ชาย",
+          "size": "lg",
+          "align": "center",
+          "color": "#3D09DD"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "md",
+      "margin": "lg",
+      "contents": [
+        {
+          "type": "image",
+          "url": "https://www.siamzone.com/music/news/2015/07381.jpg",
+          "align": "center",
+          "gravity": "center",
+          "aspectRatio": "9:16",
+          "aspectMode": "cover",
+          "backgroundColor": "#471E1E"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "รอง สว.ฝอ.ภ.จว.ชลบุรี",
+              "size": "xl",
+              "align": "center",
+              "gravity": "center",
+              "color": "#1A4CE8"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "flex": 3,
+          "margin": "xl",
+          "contents": [
+            {
+              "type": "text",
+              "text": "08-1087-5332",
+              "align": "center",
+              "gravity": "center",
+              "weight": "bold",
+              "color": "#DD1919"
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "CALL",
+                "uri": "https://linecorp.com"
+              },
+              "style": "primary",
+              "gravity": "center"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}';
+		$datas = json_decode($flexarray);
 		$datas['type'] = 'text';
-		$datas['text'] = $text;
+		$datas['text'] = $text;*/
 		return $datas;
 	}
 	function sentMessage($encodeJson,$datas)
