@@ -18,14 +18,128 @@
 	http_response_code(200);
 	function getFormatTextMessage($text)
 	{
-		$datas = [];
+		//$datas = [];
+/*sssssssssssssssssssssssssssssssssssssssssssssssssssssssss*/
+$datas = array (
+  'type' => 'flex',
+  'altText' => 'Flex Message',
+  'contents' =>
+  array (
+    'type' => 'bubble',
+    'direction' => 'ltr',
+    'header' =>
+    array (
+      'type' => 'box',
+      'layout' => 'vertical',
+      'contents' =>
+      array (
+        0 =>
+        array (
+          'type' => 'text',
+          'text' => 'ร.ต.อ.สมชาย  มีสตางค์',
+          'size' => 'xl',
+          'align' => 'center',
+          'gravity' => 'center',
+          'color' => '#2216C3',
+        ),
+        1 =>
+        array (
+          'type' => 'separator',
+          'margin' => 'sm',
+        ),
+        2 =>
+        array (
+          'type' => 'text',
+          'text' => 'ชาย',
+          'size' => 'lg',
+          'align' => 'center',
+          'color' => '#3D09DD',
+        ),
+      ),
+    ),
+    'body' =>
+    array (
+      'type' => 'box',
+      'layout' => 'vertical',
+      'spacing' => 'md',
+      'margin' => 'lg',
+      'contents' =>
+      array (
+        0 =>
+        array (
+          'type' => 'image',
+          'url' => 'https://www.siamzone.com/music/news/2015/07381.jpg',
+          'align' => 'center',
+          'gravity' => 'center',
+          'aspectRatio' => '9:16',
+          'aspectMode' => 'cover',
+          'backgroundColor' => '#471E1E',
+        ),
+        1 =>
+        array (
+          'type' => 'separator',
+        ),
+        2 =>
+        array (
+          'type' => 'box',
+          'layout' => 'horizontal',
+          'contents' =>
+          array (
+            0 =>
+            array (
+              'type' => 'text',
+              'text' => 'รอง สว.ฝอ.ภ.จว.ชลบุรี',
+              'size' => 'xl',
+              'align' => 'center',
+              'gravity' => 'center',
+              'color' => '#1A4CE8',
+            ),
+          ),
+        ),
+        3 =>
+        array (
+          'type' => 'box',
+          'layout' => 'horizontal',
+          'flex' => 3,
+          'margin' => 'xl',
+          'contents' =>
+          array (
+            0 =>
+            array (
+              'type' => 'text',
+              'text' => '08-1087-5332',
+              'align' => 'center',
+              'gravity' => 'center',
+              'weight' => 'bold',
+              'color' => '#DD1919',
+            ),
+            1 =>
+            array (
+              'type' => 'button',
+              'action' =>
+              array (
+                'type' => 'uri',
+                'label' => 'CALL',
+                'uri' => 'https://linecorp.com',
+              ),
+              'style' => 'primary',
+              'gravity' => 'center',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+/*sssssssssssssssssssssssssssssssssssssssssssssssssssssssss*/
+
 		/*$datas['type'] = 'text';
 		$datas['text'] = $text;*/
-    $datas['type'] = 'location';
+    /*$datas['type'] = 'location';
     $datas['title'] = 'เซ็นทรัลพลาซา ลาดพร้าว';
     $datas['address']= '1693 ถนนพหลโยธิน แขวงจตุจักร เขตจตุจักร กรุงเทพมหานคร 10900';
     $datas['latitude'] =  13.8164458;
-    $datas['longitude'] =  100.558962;
+    $datas['longitude'] =  100.558962;*/
 
 
 
